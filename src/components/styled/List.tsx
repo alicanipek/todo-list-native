@@ -1,8 +1,8 @@
-import {TouchableOpacity, ViewPropTypes} from 'react-native';
+import {VirtualizedList} from 'react-native';
 import styled from 'styled-components/native';
 import * as System from 'styled-system';
 
-export interface ButtonProps
+export interface ListProps
   extends System.BorderProps,
     System.FlexboxProps,
     System.SpaceProps,
@@ -20,6 +20,6 @@ export const composeBox = System.compose(
   System.borderRadius,
 );
 
-const Button = styled.TouchableOpacity<ButtonProps>(composeBox);
+export const List = styled.FlatList<ListProps>(composeBox);
 
-export default Button;
+export default List;

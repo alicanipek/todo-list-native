@@ -1,11 +1,11 @@
 import React from 'react';
-import {GestureResponderEvent, View} from 'react-native';
+import {GestureResponderEvent} from 'react-native';
 import Item from '../models/Item';
-import Box from './Box';
-import Button from './Button';
 import TodoDone from './icons/TodoDone';
 import TodoNotDone from './icons/TodoNotDone';
-import Text from './Text';
+import Box from './styled/Box';
+import Button from './styled/Button';
+import Text from './styled/Text';
 
 interface TodoItemProps {
   onPress: (event: GestureResponderEvent) => void;
